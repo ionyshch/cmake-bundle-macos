@@ -1,3 +1,5 @@
+// Copyright (c) 2017 Ivan Onyshchenko
+
 #include <string>
 #include <iostream>
 #include "libThree.h"

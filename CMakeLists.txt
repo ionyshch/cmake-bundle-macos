@@ -1,3 +1,4 @@
+# Copyright (c) 2017 Ivan Onyshchenko
 project(PortableApp LANGUAGES CXX)
 cmake_minimum_required(VERSION 3.1)
 
@@ -13,7 +14,7 @@ set(APP_NAME PortableApp)
 add_executable(${APP_NAME} MACOSX_BUNDLE main.cpp)
 target_link_libraries(${APP_NAME} LibOne LibTwo)
 
-add_custom_target(Docs SOURCES README.md .gitignore LICENSE.txt)
+add_custom_target(Docs SOURCES README.md .gitignore LICENSE)
 
 # Destination paths below are relative to ${CMAKE_INSTALL_PREFIX}
 install(TARGETS ${APP_NAME}
